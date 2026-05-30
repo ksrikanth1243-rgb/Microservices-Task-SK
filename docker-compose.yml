@@ -2,7 +2,6 @@ services:
   user-service:
     build:
       context: ./Microservices/user-service
-      dockerfile: Dockerfile
     container_name: user-service
     ports:
       - "3000:3000"
@@ -13,7 +12,6 @@ services:
   product-service:
     build:
       context: ./Microservices/product-service
-      dockerfile: Dockerfile
     container_name: product-service
     ports:
       - "3001:3001"
@@ -24,7 +22,6 @@ services:
   order-service:
     build:
       context: ./Microservices/order-service
-      dockerfile: Dockerfile
     container_name: order-service
     ports:
       - "3002:3002"
@@ -35,7 +32,6 @@ services:
   gateway-service:
     build:
       context: ./Microservices/gateway-service
-      dockerfile: Dockerfile
     container_name: gateway-service
     ports:
       - "3003:3003"
